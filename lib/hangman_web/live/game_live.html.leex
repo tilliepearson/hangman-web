@@ -1,0 +1,13 @@
+
+<div id="word" class="<%= @total_guessed_word_class %>">
+    <%= @total_guessed_word %>
+</div>
+
+<div id="guess-monologue">
+</div>
+
+<form id="form" phx-submit="submit">
+    <label for="guess-input">Guess:</input>
+    <input type="text" maxlength="1" id="guess-input" name="guess-input" value="<%= @guess_input %>" placeholder="Any letter of the alphabet" />
+    <button type="submit" id="thatButtonIsABadBoi">Submit</button>
+</form>

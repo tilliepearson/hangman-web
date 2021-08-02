@@ -1,0 +1,48 @@
+$word-base-color: #a9a9a9;
+$word-success-color: #33cc33;
+$word-error-color: #ff3300;
+
+#word {
+  font-size: 10em;
+  letter-spacing: 10px;
+  text-align: center;
+  color: $word-base-color;
+
+  &.success {
+    animation: success-color-animation;
+    animation-duration: 1s;
+  }
+
+  &.error {
+    animation: error-color-animation;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes success-color-animation {
+  0% {
+    color: $word-base-color;
+  }
+
+  50% {
+    color: $word-success-color;
+  }
+
+  100% {
+    color: $word-base-color;
+  }
+}
+
+@keyframes error-color-animation {
+  0% {
+    color: $word-base-color;
+  }
+
+  50% {
+    color: $word-error-color;
+  }
+
+  100% {
+    color: $word-base-color;
+  }
+}
